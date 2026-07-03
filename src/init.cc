@@ -26,12 +26,13 @@ void init_local_workspace(const std::string& platform, const std::string& proble
             std::cout << "  |-- Created: " << q_path << "\n";
         }
 
+        // TODO: create several standard template to copy
         std::string s_path = folder_path + "/solution.cpp";
         std::ofstream s_file(s_path);
         if (s_file.is_open()) {
             s_file << "#include <iostream>\n\n";
             s_file << "int main() {\n";
-            s_file << "// TODO: Code here\n";
+            s_file << "// TODO: code here\n";
             s_file << "    return 0;\n";
             s_file << "}\n";
             s_file.close();
@@ -56,8 +57,7 @@ void init_local_workspace(const std::string& platform, const std::string& proble
 }
 
 int main() {
-    init_local_workspace("cf", "1234A");
-    std::cerr << "\033[31m[Error]\033[0m Filesystem error: " << "\n";
+    init_local_workspace("cf", "1234A"); // TODO: according to pipe stdin create
 
     return 0;
 }
