@@ -1,3 +1,4 @@
+#include "init.h"
 #include <iostream>
 #include <fstream>
 #include <filesystem>
@@ -56,8 +57,15 @@ void init_local_workspace(const std::string& platform, const std::string& proble
         }
 }
 
-int main() {
-    init_local_workspace("cf", "1234A"); // TODO: according to pipe stdin create
+void handle_init(const std::vector<std::string>& args) {
+    if (args.size() < 2) {
+        std::cerr << "Usage: f2l init <platform> <problem_id>\n";
+        std::cerr << "Example: f2l init cf 1234A\n";
+        return;
+    }
 
-    return 0;
+    std::string platform = args[0];
+    std::string problem_id = args[1];
+
+    init_local_workspace(platform, problem_id);
 }
