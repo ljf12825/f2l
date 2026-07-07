@@ -61,3 +61,9 @@ v0.1.x版本要求具有以下功能
 我决定把这个参数解释器独立出去成为可复用组件<https://ljf12825.github.io/lab/gg-cli-router/>
 
 TAB补全
+
+## 20260707
+
+Mock测试\
+通过git submodule引入ggclirouter.h
+使用CMake
