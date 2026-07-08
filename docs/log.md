@@ -67,3 +67,19 @@ TAB补全
 Mock测试\
 通过git submodule引入ggclirouter.h
 使用CMake
+
+## 20260708
+
+LeetCode无公开API，且反爬虫，且网页动态渲染；解决方案：
+
+- GraphQL
+- alfa-leetcode-api
+
+Codeforces有官方API\
+AtCoder有官方API
+洛谷有非官方API\
+USACO题目直接是文件，直接爬就行
+
+
+
+
