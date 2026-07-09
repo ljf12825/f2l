@@ -80,6 +80,17 @@ AtCoder有官方API
 洛谷有非官方API\
 USACO题目直接是文件，直接爬就行
 
+## 20260709
 
+先从最简单的Codeforces开始
 
+<https://codeforces.com/apiHelp>
+
+Codeforces API是RESTful风格的，所有请求都通过HTTP GET发送到
+
+```txt
+https://codeforces.com/api/{methodName}
+```
+
+用python处理网络和数据
 
