@@ -92,5 +92,13 @@ Codeforces API是RESTful风格的，所有请求都通过HTTP GET发送到
 https://codeforces.com/api/{methodName}
 ```
 
-用python处理网络和数据
+用python处理网络和数据，有以下考量：
 
+- 网络和数据的处理是C++不擅长的
+- 网站结构，API是多变的
+
+## 20260712
+
+本地`.f2l`文件夹设计，作用类似于类似`.git`，存放fetch下来的源文件
+
+对于cf，通过API拉下来的是包含所有题目的题库，需要在本地实现过滤和分类
